@@ -4,7 +4,10 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.tools import tool
 import requests
 from typing import Optional
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 class ResearchAgent:
     def __init__(self):
         self.llm = self.init_llm()
@@ -14,7 +17,7 @@ class ResearchAgent:
     def init_llm(self):
         return ChatNVIDIA(
             model="meta/llama3-70b-instruct",
-            nvidia_api_key="NVIDIA_API_KEY",
+            nvidia_api_key=os.getenv["NVIDIA_API_KEY"],
             temperature=0.3
         )
 
