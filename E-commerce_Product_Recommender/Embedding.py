@@ -31,7 +31,7 @@ def get_embeddings():
 
     embeddings = NVIDIAEmbeddings(
         model="nvidia/nv-embedqa-e5-v5",
-        nvidia_api_key= "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" # Replace with your actual key
+        nvidia_api_key= ""
     )
 
     db = FAISS.from_documents(docs, embeddings)
