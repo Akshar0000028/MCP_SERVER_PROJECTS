@@ -27,7 +27,7 @@ recommendation_tool = Tool(
 
 
 def setup_agent():
-    llm = ChatNVIDIA(model="mixtral_8x7b",nvidia_api_key="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",)
+    llm = ChatNVIDIA(model="mixtral_8x7b",nvidia_api_key="")
     tools = [recommendation_tool]
     
     prompt = ChatPromptTemplate.from_messages([
