@@ -29,7 +29,7 @@ async def analyze_resume(file: UploadFile = File(...)):
 
         llm = ChatNVIDIA(
             model="meta/llama3-70b-instruct",
-            nvidia_api_key="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",
+            nvidia_api_key="NVIDIA_API_KEY",
             temperature=0.3
         )
         
