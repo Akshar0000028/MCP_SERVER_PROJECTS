@@ -18,7 +18,7 @@ def create_retriever(repo_path: str):
     embeddings = NVIDIAEmbeddings(
         model="nvidia/nv-embedqa-e5-v5",
         model_type="passage",
-        nvidia_api_key="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"  
+        nvidia_api_key="NVIDIA_API_KEY"  
     )
 
     vectorstore = FAISS.from_documents(docs, embedding=embeddings)
