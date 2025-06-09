@@ -42,7 +42,7 @@ async def load_repo(payload: RepoRequest):
         qa_chain = RetrievalQA.from_chain_type(
             llm=ChatNVIDIA(
                 model="meta/llama3-70b-instruct",
-                nvidia_api_key="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" 
+                nvidia_api_key="NVIDIA_API_KEY" 
             ),
             retriever=retriever,
             return_source_documents=True
