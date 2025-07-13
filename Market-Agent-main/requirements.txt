@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+firecrawl
+langchain
+langchain-nvidia-ai-endpoints
+youtube-transcript-api
+yt-dlp
+python-dotenv
+requests
+fastmcp
